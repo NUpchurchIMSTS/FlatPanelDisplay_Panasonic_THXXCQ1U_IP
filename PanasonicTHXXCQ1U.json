@@ -1,0 +1,350 @@
+{
+  "CrestronSerialDeviceApi": {
+    "DeviceSupport": {
+      "SupportsChangeVolume": true,
+      "SupportsCoolDownTime": true,
+      "SupportsDisconnect": true,
+      "SupportsDiscreteEnergyStar": false,
+      "SupportsDiscreteMute": true,
+      "SupportsDiscretePower": true,
+      "SupportsDiscreteVideoMute": false,
+      "SupportsEnergyStarFeedback": false,
+      "SupportsFeedback": true,
+      "SupportsInputFeedback": true,
+      "SupportsLampHours": false,
+      "SupportsMute": false,
+      "SupportsMuteFeedback": true,
+      "SupportsOnScreenDisplayFeedback": false,
+      "SupportsPowerFeedback": true,
+      "SupportsReconnect": true,
+      "SupportsSetInputSource": true,
+      "SupportsSetVolume": true,
+      "SupportsToggleEnergyStar": false,
+      "SupportsTogglePower": false,
+      "SupportsToggleVideoMute": false,
+      "SupportsVideoMuteFeedback": false,
+      "SupportsVolumePercentFeedback": true,
+      "SupportsWarmUpTime": true
+    },
+    "DeviceSupport2": ["SupportsUsername", "SupportsPassword"],
+    "GeneralInformation": {
+      "DeviceType": "Flat Panel Display",
+      "Manufacturer": "IMS",
+      "BaseModel": "TH-55CQ1U",
+      "VersionDate": "2021-09-15 17:00:00.000",
+      "SdkVersion": "8.0000.0009",
+      "DriverVersion": "1.0.0",
+      "Description": "Panasonic TH-XXCQ1U",
+      "Guid": "29FFA05C-4E2B-40D6-B20D-AF9A8581F658",
+      "SupportedSeries": ["TH-XXCQ1U"],
+      "SupportedModels": [
+        "TH-86CQ1U",
+        "TH-75CQ1U",
+        "TH-65CQ1U",
+        "TH-55CQ1U",
+        "TH-50CQ1U",
+        "TH-43CQ1U"
+      ]
+    },
+    "Api": {
+      "Communication": {
+        "CommunicationType": 1,
+        "Protocol": -1,
+        "Baud": -1,
+        "Parity": -1,
+        "HwHandshake": -1,
+        "SwHandshake": -1,
+        "DataBits": 0,
+        "StopBits": -1,
+        "Port": 10101,
+        "EnableAutoPolling": true,
+        "EnableAutoReconnect": true,
+        "TimeBetweenCommands": 250,
+        "ResponseTimeout": 8000,
+        "WaitForResponse": true,
+        "IpProtocol": 0,
+        "IsUserAdjustable": false,
+        "Authentication": {
+          "Type": "UsernamePassword",
+          "UsernameRequired": false,
+          "PasswordRequired": true,
+          "Required": false,
+          "DefaultUsername": "dispadmin",
+          "DefaultPassword": "@Panasonic"
+        },
+        "IsSecure": false,
+        "UserAdjustableProperties": [],
+        "DeviceId": 0
+      },
+      "VideoConfigurations": {
+        "SupportsDisplayModes": false
+      },
+      "MediaServiceProviders": {
+        "SupportsMediaServices": false
+      },
+      "StandardCommands": {
+        "PowerOn": {
+          "StandardCommand": 6602,
+          "Command": "PON",
+          "Parameters": []
+        },
+        "PowerOff": {
+          "StandardCommand": 6601,
+          "Command": "POF",
+          "Parameters": []
+        },
+        "Hdmi1": {
+          "StandardCommand": 400,
+          "Command": "IMS:HM1",
+          "Parameters": []
+        },
+        "Hdmi2": {
+          "StandardCommand": 401,
+          "Command": "IMS:HM2",
+          "Parameters": []
+        },
+        "Dvi1": {
+          "StandardCommand": 600,
+          "Command": "IMS:DV1",
+          "Parameters": []
+        },
+        "Dvi2": {
+          "StandardCommand": 601,
+          "Command": "IMS:DV2",
+          "Parameters": []
+        },
+        "Usb1": {
+          "StandardCommand": 1200,
+          "Command": "IMS:UD1",
+          "Parameters": []
+        },
+        "Antenna1": {
+          "StandardCommand": 1400,
+          "Command": "IMS:TV1",
+          "Parameters": []
+        },
+        "Vga1": {
+          "StandardCommand": 200,
+          "Command": "IMS:PC1",
+          "Parameters": []
+        },
+        "ChannelUp": {
+          "StandardCommand": 5602,
+          "Command": "STV:CUP",
+          "Parameters": []
+        },
+        "ChannelDown": {
+          "StandardCommand": 5603,
+          "Command": "STV:CDN",
+          "Parameters": []
+        },
+        "MuteOn": {
+          "StandardCommand": 4602,
+          "Command": "AMT:1",
+          "Parameters": []
+        },
+        "MuteOff": {
+          "StandardCommand": 4601,
+          "Command": "AMT:0",
+          "Parameters": []
+        },
+        "Vol": {
+          "StandardCommand": 7000,
+          "Command": "AVL:!$[000]",
+          "Parameters": [
+            {
+              "Type": 0,
+              "PadCharacter": "0",
+              "PadDirection": 0,
+              "Id": "000",
+              "Max": 100,
+              "Min": 0,
+              "StaticDataWidth": 3
+            }
+          ]
+        },
+        "PowerPoll": {
+          "StandardCommand": 6603,
+          "Command": "QPW",
+          "Parameters": []
+        },
+        "InputPoll": {
+          "StandardCommand": 1900,
+          "Command": "QMI",
+          "Parameters": []
+        },
+        "VolumePoll": {
+          "StandardCommand": 7003,
+          "Command": "QAV",
+          "Parameters": []
+        },
+        "MutePoll": {
+          "StandardCommand": 4603,
+          "Command": "QAM",
+          "Parameters": []
+        }
+      },
+      "CustomCommands": [],
+      "InputConnections": [
+        { "InputType": 400, "InputConnector": 20, "Description": "HDMI1" },
+        { "InputType": 401, "InputConnector": 20, "Description": "HDMI2" },
+        { "InputType": 600, "InputConnector": 90, "Description": "DVI1" },
+        { "InputType": 601, "InputConnector": 90, "Description": "DVI2" },
+        { "InputType": 1200, "InputConnector": 80, "Description": "USB1" },
+        { "InputType": 1400, "InputConnector": 70, "Description": "TV1" },
+        { "InputType": 200, "InputConnector": 10, "Description": "PC1" }
+      ],
+      "AudioInOut": {
+        "Inputs": [
+          {
+            "type": 400,
+            "description": "HDMI1",
+            "connector": 10,
+            "friendlyName": "HDMI1"
+          },
+          {
+            "type": 401,
+            "description": "HDMI2",
+            "connector": 10,
+            "friendlyName": "HDMI2"
+          },
+          {
+            "type": 600,
+            "description": "DVI1",
+            "connector": 90,
+            "friendlyName": "DVI1"
+          },
+          {
+            "type": 601,
+            "description": "DVI2",
+            "connector": 90,
+            "friendlyName": "DVI2"
+          },
+          {
+            "type": 1200,
+            "description": "USB1",
+            "connector": 80,
+            "friendlyName": "USB1"
+          },
+          {
+            "type": 1400,
+            "description": "TV1",
+            "connector": 110,
+            "friendlyName": "TV1"
+          },
+          {
+            "type": 200,
+            "description": "PC1",
+            "connector": 40,
+            "friendlyName": "PC1"
+          }
+        ],
+        "Outputs": [
+          {
+            "type": 29901,
+            "description": "Analog Audio out",
+            "connector": 40,
+            "friendlyName": "Analog Audio out"
+          }
+        ]
+      },
+      "VideoInOut": {
+        "Inputs": [
+          {
+            "type": 400,
+            "description": "HDMI1",
+            "connector": 20,
+            "friendlyName": "HDMI1"
+          },
+          {
+            "type": 401,
+            "description": "HDMI2",
+            "connector": 20,
+            "friendlyName": "HDMI2"
+          },
+          {
+            "type": 600,
+            "description": "DVI1",
+            "connector": 90,
+            "friendlyName": "DVI1"
+          },
+          {
+            "type": 601,
+            "description": "DVI2",
+            "connector": 90,
+            "friendlyName": "DVI2"
+          },
+          {
+            "type": 1200,
+            "description": "USB1",
+            "connector": 80,
+            "friendlyName": "USB1"
+          },
+          {
+            "type": 1400,
+            "description": "TV1",
+            "connector": 70,
+            "friendlyName": "TV1"
+          },
+          {
+            "type": 200,
+            "description": "PC1",
+            "connector": 10,
+            "friendlyName": "PC1"
+          }
+        ],
+        "Outputs": []
+      },
+      "ArrowKeys": [],
+      "PowerWaitPeriod": {
+        "UseLocalWarmupTimer": true,
+        "WarmUpTime": 5,
+        "UseLocalCooldownTimer": true,
+        "CoolDownTime": 5
+      },
+      "Feedback": {
+        "CommandAckNak": { "Ack": "", "Nak": "ER401" },
+        "Header": "\u0002",
+        "PowerFeedback": {
+          "Feedback": { "Off": "0", "On": "1" },
+          "GroupHeader": "QPW"
+        },
+        "MuteFeedback": {
+          "Feedback": {
+            "Off": "0",
+            "On": "1"
+          },
+          "GroupHeader": "QAM"
+        },
+        "InputFeedback": {
+          "GroupHeader": "QMI",
+          "Feedback": [
+            { "InputType": 400, "Feedback": "HM1" },
+            { "InputType": 401, "Feedback": "HM2" },
+            { "InputType": 600, "Feedback": "DVI1" },
+            { "InputType": 601, "Feedback": "DVI2" },
+            { "InputType": 1200, "Feedback": "UD1" },
+            { "InputType": 1400, "Feedback": "TV1" },
+            { "InputType": 200, "Feedback": "PC1" }
+          ]
+        },
+        "VolumeFeedback": { "GroupHeader": "QAV" },
+        "EnergyStarFeedback": { "Feedback": {}, "GroupHeader": "" },
+        "OnScreenDisplayFeedback": { "Feedback": {}, "GroupHeader": "" },
+        "VideoMuteFeedback": { "Feedback": {}, "GroupHeader": "" },
+        "LampHourFeedback": { "GroupHeader": "" }
+      }
+    },
+    "UserAttributes": [
+      {
+        "TypeName": "MessageBox",
+        "ParameterId": "Configuration Notice 1",
+        "Label": "Setup Instructions",
+        "Description": "To enable Serial control, Navigate to Network Setting \u003e LAN setup \u003e Select SERIAL IN",
+        "Persistent": false,
+        "RequiredForConnection": "None",
+        "Data": { "DataType": "", "Mask": "", "DefaultValue": "" }
+      }
+    ]
+  }
+}
